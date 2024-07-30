@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Sleep Tracker.props" />
+</Project>
