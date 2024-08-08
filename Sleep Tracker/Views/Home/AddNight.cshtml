@@ -1,0 +1,45 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Night
+
+<h1>Add another night here:</h1>
+
+<form method="post">
+    
+    <input class="form-control" type="hidden" asp-for="NightId">
+    
+    <label asp-for="Date">Date</label>
+    <input class="form-control" type="date" asp-for="Date" id="dateInput">
+
+    <label asp-for="Day">Day</label>
+    
+    <select asp-for="Day" id="dayInput">
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+    </select>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Set default date to today
+        let today = new Date().toISOString().split('T')[0];
+        document.getElementById('dateInput').value = today;
+
+        // Set default day to today
+        const dayOfWeek = new Date().getDay();
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const dayName = days[dayOfWeek];
+        document.getElementById('dayInput').value = dayName;
+    });
+</script>
+

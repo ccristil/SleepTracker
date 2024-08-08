@@ -1,0 +1,32 @@
+@{
+    Layout = "_Layout";
+    var night = ViewBag.CurrentNight as Night;
+}
+@model Shift;
+
+<h1>Add another shift here:</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="NightId" value="@night.NightId">
+    <input type="hidden" asp-for="ShiftId">
+    
+
+    <label asp-for="TimeWindow">Time Window</label>
+    <span class="text-danger" asp-validation-for="TimeWindow"></span>
+
+    <input class="form-control" type="text" asp-for="TimeWindow">
+
+    <label asp-for="Parent">Parent</label>
+    <span class="text-danger" asp-validation-for="Parent"></span>
+    <select class="form-control" asp-for="Parent">
+        <option value="Myah">Myah</option>
+        <option value="Cristian">Cristian</option>
+    </select>
+
+    <label asp-for="BabyHours">Hours Baby slept:</label>
+    <input class="form-control" type="number" asp-for="BabyHours">
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+

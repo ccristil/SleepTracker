@@ -19,8 +19,6 @@ public partial class SleepTrackerContext : DbContext
 
     public virtual DbSet<Night> Nights { get; set; }
 
-    public virtual DbSet<Parent> Parents { get; set; }
-
     public virtual DbSet<Pump> Pumps { get; set; }
 
     public virtual DbSet<Shift> Shifts { get; set; }
@@ -36,20 +34,14 @@ public partial class SleepTrackerContext : DbContext
             entity.ToTable("DiaperChange");
 
             entity.Property(e => e.DiaperChangeId).HasColumnName("DiaperChangeID");
+            entity.Property(e => e.ShiftId).HasColumnName("ShiftID");
         });
 
         modelBuilder.Entity<Night>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Night");
-        });
+            entity.ToTable("Night");
 
-        modelBuilder.Entity<Parent>(entity =>
-        {
-            entity.ToTable("Parent");
-
-            entity.Property(e => e.ParentId).HasColumnName("ParentID");
+            entity.Property(e => e.NightId).HasColumnName("NightID");
         });
 
         modelBuilder.Entity<Pump>(entity =>
@@ -57,6 +49,7 @@ public partial class SleepTrackerContext : DbContext
             entity.ToTable("Pump");
 
             entity.Property(e => e.PumpId).HasColumnName("PumpID");
+            entity.Property(e => e.ShiftId).HasColumnName("ShiftID");
         });
 
         modelBuilder.Entity<Shift>(entity =>
@@ -64,8 +57,10 @@ public partial class SleepTrackerContext : DbContext
             entity.ToTable("Shift");
 
             entity.Property(e => e.ShiftId).HasColumnName("ShiftID");
+            entity.Property(e => e.NightId).HasColumnName("NightID");
             entity.Property(e => e.TimeWindow).HasColumnName("Time Window");
         });
+        
 
         OnModelCreatingPartial(modelBuilder);
     }

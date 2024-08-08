@@ -1,7 +1,45 @@
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
 @{
     Layout = "_Layout";
+
+    var night = ViewBag.CurrentNight as Night;
+    var shifts = ViewBag.CurrentShifts as List<Shift>;
 }
 
-<!DOCTYPE html>
 
-<h3>Tonight</h3>
+
+<h3>@night.Day - @night.Date</h3>
+
+@if (shifts != null && shifts.Any())
+{
+    @foreach (var s in shifts)
+    {   
+        <div class="card m-2">
+            <div class="card-header">
+                @s.TimeWindow
+            </div>
+        
+            <div class="card-body">
+                <table>
+                    <tr>
+                        <p>Parent: @s.Parent</p>
+                    </tr> <tr>
+                        <p>Hours Kaleia Slept: @s.BabyHours</p>
+                    </tr> 
+                    <tr>
+                        <td><a class="btn btn-primary">Add Diaper Change🚽</a></td>
+                        <td><a class="btn btn-primary">Add Pump Session🍼</a></td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>  
+}
+
+}
+else
+{
+    <p>No shifts are created yet for this night!</p>
+}
+
+<a asp-controller="Home"  asp-route-id="@night.NightId" asp-action="AddShift" class="btn btn-primary">Add Shift</a>

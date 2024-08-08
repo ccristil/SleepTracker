@@ -6,21 +6,87 @@ namespace Sleep_Tracker.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private ISleepTrackerRepository _repo;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ISleepTrackerRepository temp)
     {
-        _logger = logger;
-    }
-
-    public IActionResult Index()
-    {
-        return View();
+        _repo = temp;
     }
     
-    public IActionResult Night()
+    
+    public IActionResult Index()
     {
+
+        var nightList = _repo.Nights.ToList();
+        return View(nightList);
+    }
+    
+    public IActionResult Night(int id)
+    {
+        var currentNight = _repo.Nights
+            .Single(x => x.NightId == id);
+
+        var currentShifts = _repo.Shifts
+            .Where(x => x.NightId == id).ToList();
+
+
+        ViewBag.CurrentNight = currentNight;
+        ViewBag.CurrentShifts = currentShifts;
+        
+        
         return View();
+    }
+    [HttpGet]
+    public IActionResult AddNight()
+    {
+        return View("AddNight", new Night());
+    }
+    
+    [HttpPost]
+    public IActionResult AddNight(Night response)
+    {
+        if (ModelState.IsValid)
+        {
+            _repo.AddNight(response);
+            return View("AddNightConfirmation", response);
+        }
+        else
+        {
+            return View(response);
+        }
+    }
+
+    [HttpGet]
+    public IActionResult AddShift(int id)
+    {
+        var currentNight = _repo.Nights
+            .FirstOrDefault(x => x.NightId == id);
+        
+        if (currentNight == null)
+        {
+            return NotFound();
+        }
+        
+        ViewBag.CurrentNight = currentNight;
+        
+        var newShift = new Shift { NightId = id };
+        
+        return View(newShift);
+        
+    }
+
+    [HttpPost]
+    public IActionResult AddShift(Shift response)
+    {
+        if (ModelState.IsValid)
+        {
+            _repo.AddShift(response);
+            return View("ShiftConfirmation",response);
+        }
+        else
+        {
+            return View(response);
+        }
     }
     public IActionResult Summary()
     {

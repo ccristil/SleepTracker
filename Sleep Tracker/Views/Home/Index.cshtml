@@ -2,21 +2,27 @@
     ViewData["Title"] = "Home Page";
 }
 
+@model List<Night>
+
 
 <h3>Here is a list of the past few nights</h3>
 
 <table class="table-primary table-bordered">
-    <th>Nights</th>
-    <tr>
-        <td>Monday</td>
-        <td>6 </td>
-    </tr>
-    <tr>
-        <td>Tuesday</td>
-        <td>6.5</td>
-    </tr>
-    <tr>
-        <td>Wednesday</td>
-        <td>5</td>
-    </tr>
+    <th>Night</th>
+    <th>Date</th>
+    <th>Hours Slept</th>
+    <tbody>
+    @foreach (var n in Model)
+    {
+        <tr>
+            <td>@n.Day</td>
+            <td>@n.Date</td>
+            <td>@n.TotalBabyHours</td>
+            <td><a href="@Url.Action("Night", "Home", new { id = n.NightId })" class="btn btn-primary">Night Details</a></td>
+        </tr>
+    }
+    </tbody>
 </table>
+
+<h6>Add another night here👇🏼</h6>
+<a asp-controller="Home" asp-action="AddNight" class="btn btn-primary">Add Night</a>

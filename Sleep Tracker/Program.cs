@@ -6,10 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// builder.Services.AddDbContext<SleepTrackerContext>(options =>
-// {
-//     options.UseSqlite(builder.Configuration["ConnectionStrings:SleepTrackerDBConnection"]);
-// });
+builder.Services.AddDbContext<SleepTrackerContext>(options =>
+{
+    options.UseSqlite(builder.Configuration["ConnectionStrings:SleepTrackerDBConnection"]);
+});
+
+builder.Services.AddScoped<ISleepTrackerRepository, EFSleepTrackerRepository>();
 
 var app = builder.Build();
 
