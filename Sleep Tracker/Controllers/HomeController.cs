@@ -20,6 +20,23 @@ public class HomeController : Controller
         var nightList = _repo.Nights.ToList();
         return View(nightList);
     }
+
+    public IActionResult Tonight()
+    {
+        var latestNightID = _repo.Nights
+            .Max(x => x.NightId);
+
+        var latestNight = _repo.Nights
+            .FirstOrDefault(x => x.NightId == latestNightID);
+        
+        var shifts = _repo.Shifts
+            .Where(x => x.NightId == latestNightID);
+
+        ViewBag.LatestNight = latestNight;
+        ViewBag.Shifts = shifts;
+        return View();
+        
+    }
     
     public IActionResult Night(int id)
     {

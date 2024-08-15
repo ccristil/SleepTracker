@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace Sleep_Tracker.Models;
 
 public class EFSleepTrackerRepository : ISleepTrackerRepository
@@ -21,7 +23,27 @@ public class EFSleepTrackerRepository : ISleepTrackerRepository
     public void AddShift(Shift shift)
     {
         _context.Shifts.Add(shift);
+        
         _context.SaveChanges();
+
+        UpdateTotalHoursSlept(shift.NightId);
+    }
+
+    public void UpdateTotalHoursSlept(int nightId)
+    {
+        var night = _context.Nights
+            .FirstOrDefault(n => n.NightId == nightId);
+
+        var shifts = _context.Shifts
+            .Where(x => x.NightId == nightId);
+
+        var sumHoursSlept = shifts.Sum(x => x.BabyHours);
+
+        if (night.TotalBabyHours != sumHoursSlept)
+        {
+            night.TotalBabyHours = sumHoursSlept;
+            _context.SaveChanges();
+        }
     }
 
 }

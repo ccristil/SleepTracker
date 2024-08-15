@@ -12,6 +12,6 @@ public partial class Shift
     [Required(ErrorMessage = "Parent is a required field.")]
     public string Parent { get; set; }
     
-    public int? NightId { get; set; }
+    public int NightId { get; set; }
     public double? BabyHours { get; set; }
 }
