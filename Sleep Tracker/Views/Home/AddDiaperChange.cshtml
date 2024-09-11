@@ -1,0 +1,31 @@
+@{
+    Layout = "_Layout";
+    var shift = ViewBag.CurrentShift as Shift;
+
+}
+@model DiaperChange
+
+
+<h1>Add Diaper Change</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="ShiftId" value="@shift.ShiftId">
+    <input type="hidden" asp-for="DiaperChangeId">
+
+    <div class="row form-check form-switch">
+        <label asp-for="Poop">Poop</label>
+        <input class="form-check-input" role="switch" type="checkbox" asp-for="Poop">
+    </div>
+    
+    <div class="row">
+        <div class="col-3">
+            <label asp-for="Time">Time</label>
+            <input class="form-control" type="time" asp-for="Time">
+        </div>
+    </div>
+   
+    
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

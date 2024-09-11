@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/Views/Home/AddDiaperChange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZGREaWFwZXJDaGFuZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/Views/Home/AddNight.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZGROaWdodC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/Views/Home/AddShift.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZGRTaGlmdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/Views/Home/DiaperChangeConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EaWFwZXJDaGFuZ2VDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/Views/Home/EditShift.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FZGl0U2hpZnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/Views/Home/Index.cshtml]

@@ -13,6 +13,7 @@ public class EFSleepTrackerRepository : ISleepTrackerRepository
 
     public IQueryable<Night> Nights => _context.Nights;
     public IQueryable<Shift> Shifts => _context.Shifts;
+    public IQueryable<DiaperChange> DiaperChanges => _context.DiaperChanges;
 
     public void AddNight(Night night)
     {
@@ -27,6 +28,22 @@ public class EFSleepTrackerRepository : ISleepTrackerRepository
         _context.SaveChanges();
 
         UpdateTotalHoursSlept(shift.NightId);
+    }
+
+    public void AddDiaperChange(DiaperChange diaperChange)
+    {
+        _context.DiaperChanges.Add(diaperChange);
+        _context.SaveChanges();
+        
+    }
+
+    public void EditShift(Shift shift)
+    {
+        _context.Shifts.Update(shift);
+        _context.SaveChanges();
+        
+        UpdateTotalHoursSlept(shift.NightId);
+
     }
 
     public void UpdateTotalHoursSlept(int nightId)

@@ -16,23 +16,54 @@
     {   
         <div class="card m-2">
             <div class="card-header">
-                @s.TimeWindow
+                <div class="row">
+                    <div class="col">
+                        <h5>@s.TimeWindow</h5>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-secondary float-end" asp-controller="Home" asp-action="EditShift" asp-route-id="@s.ShiftId">Edit✏️</a>
+                    </div>
+                </div>
+                
             </div>
-        
+
             <div class="card-body">
-                <table>
-                    <tr>
-                        <p>Parent: @s.Parent</p>
-                    </tr> <tr>
-                        <p>Hours Kaleia Slept: @s.BabyHours</p>
-                    </tr> 
-                    <tr>
-                        <td><a class="btn btn-primary">Add Diaper Change🚽</a></td>
-                        <td><a class="btn btn-primary">Add Pump Session🍼</a></td>
-                    </tr>
-                </table>
+                <div class="row">
+                    <div class="col">
+                        <table>
+                            <tr>
+                                <p>Parent: @s.Parent</p>
+                            </tr>
+                            <tr>
+                                <p>Hours Kaleia Slept: @s.BabyHours</p>
+                            </tr>
+                            <tr>
+                                <td><a asp-controller="Home" asp-action="AddDiaperChange" asp-route-id="@s.ShiftId" class="btn btn-primary">Add Diaper Change🚽</a></td>
+                                <td><a class="btn btn-primary">Add Pump Session🍼</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <table class=" table table-striped">
+                            <thead>
+                            <th>Time</th>
+                            <th>Poop</th>
+                            </thead>
+                            <tbody>
+                                @foreach (var diaperchange in s.DiaperChanges)
+                                {
+                                    <tr>@diaperchange.Time</tr>
+                                    <tr>@diaperchange.Poop</tr>
+                                }
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+
             </div>
-        
+
         </div>  
 }
 

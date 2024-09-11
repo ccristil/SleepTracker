@@ -14,4 +14,7 @@ public partial class Shift
     
     public int NightId { get; set; }
     public double? BabyHours { get; set; }
+    
+    public ICollection<DiaperChange> DiaperChanges { get; set; }
+
 }

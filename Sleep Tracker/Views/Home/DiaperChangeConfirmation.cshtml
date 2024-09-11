@@ -1,0 +1,21 @@
+@{
+    Layout = "_Layout";
+}
+@model DiaperChange
+
+<h1>Confirmation</h1>
+
+<h6>Your diaper change has successfully been saved!</h6>
+
+<table class="table-striped">
+    <thead>
+    <th>Poop</th>
+    <th>Time</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>@Model.Poop</td>
+        <td>@Model.Time</td>
+    </tr>
+    </tbody>
+</table>

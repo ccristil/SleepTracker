@@ -1,0 +1,30 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Shift;
+<h1>Edit shift here:</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="ShiftId">
+    <input type="hidden" asp-for="NightId">
+    
+
+    <label asp-for="TimeWindow">Time Window</label>
+    <span class="text-danger" asp-validation-for="TimeWindow"></span>
+
+    <input class="form-control" type="text" asp-for="TimeWindow">
+
+    <label asp-for="Parent">Parent</label>
+    <span class="text-danger" asp-validation-for="Parent"></span>
+    <select class="form-control" asp-for="Parent">
+        <option value="Myah">Myah</option>
+        <option value="Cristian">Cristian</option>
+    </select>
+
+    <label asp-for="BabyHours">Hours Baby slept:</label>
+    <input class="form-control" type="number" asp-for="BabyHours">
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>

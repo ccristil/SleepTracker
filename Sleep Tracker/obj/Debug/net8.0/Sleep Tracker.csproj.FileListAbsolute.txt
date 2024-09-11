@@ -1,33 +1,12 @@
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/appsettings.Development.json
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/appsettings.json
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/libman.json
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Sleep Tracker.staticwebassets.runtime.json
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Sleep Tracker
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Sleep Tracker.deps.json
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Sleep Tracker.runtimeconfig.json
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Sleep Tracker.dll
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Sleep Tracker.pdb
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.GeneratedMSBuildEditorConfig.editorconfig
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.AssemblyInfoInputs.cache
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.AssemblyInfo.cs
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.csproj.CoreCompileInputs.cache
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.MvcApplicationPartsAssemblyInfo.cache
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.RazorAssemblyInfo.cache
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.RazorAssemblyInfo.cs
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets.build.json
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets.development.json
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets/msbuild.Sleep Tracker.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets/msbuild.build.Sleep Tracker.props
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Sleep Tracker.props
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Sleep Tracker.props
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets.pack.json
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/scopedcss/bundle/Sleep Tracker.styles.css
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/scopedcss/projectbundle/Sleep Tracker.bundle.scp.css
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.dll
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/refint/Sleep Tracker.dll
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.pdb
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.genruntimeconfig.cache
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/ref/Sleep Tracker.dll
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Humanizer.dll
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
@@ -124,5 +103,27 @@
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.csproj.AssemblyReference.cache
-/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tr.7FD9E708.Up2Date
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.AssemblyInfoInputs.cache
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.AssemblyInfo.cs
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.csproj.CoreCompileInputs.cache
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.MvcApplicationPartsAssemblyInfo.cache
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.RazorAssemblyInfo.cache
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.RazorAssemblyInfo.cs
 /Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.sourcelink.json
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets.build.json
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets.development.json
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets/msbuild.Sleep Tracker.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets/msbuild.build.Sleep Tracker.props
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Sleep Tracker.props
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Sleep Tracker.props
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/scopedcss/bundle/Sleep Tracker.styles.css
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/scopedcss/projectbundle/Sleep Tracker.bundle.scp.css
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tr.7FD9E708.Up2Date
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.dll
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/refint/Sleep Tracker.dll
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.pdb
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/Sleep Tracker.genruntimeconfig.cache
+/Users/cristiancruz/RiderProjects/Sleep Tracker/Sleep Tracker/obj/Debug/net8.0/ref/Sleep Tracker.dll
